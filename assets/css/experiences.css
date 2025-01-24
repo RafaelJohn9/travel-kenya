@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg: rgba(55, 229, 125, .7);
+    --fore: white;
+    --button-border-radius: 50px;
+    --canvas-border-radius: 7px;
+    --box-shadow: 0 10px 40px (200, 200, 200, .9);
+    --button-bg: transparent;
+    --font: Roboto, arial;
+    --title-size: 32px;
+    --align: center;
+    --titie-weight: 600;
+    --display-1: flex;
+    --display-2: grid;
+    --button-bg: white;
+    --button-hover-fg: white;
+    --button-hover-bg: rgba(255, 255, 255, 0.349);
+}
+
+.exMain {
+    background: url(/assets/images/stefan-stefancik-TPv9dh822VA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover; 
+    background-color: #005587;
+    margin: 0 auto;
+    padding: 30px;
+    color: white;
+    border-radius: 15px;
+    font-family: var(--font);
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.exHead div{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.exHead p a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%; 
+    height: fit-content;
+    gap: 10px;
+    align-items: center;
+}
+
+#my_div {
+  outline: nd;
+  height: 200px;
+}
