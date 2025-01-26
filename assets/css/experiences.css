@@ -53,6 +53,8 @@
 }
 
 #my_div {
-  outline: nd;
-  height: 200px;
+  outline: none;
+  height: 50px;
+  width: 60px;
+  transform: rotate(90deg);
 }
