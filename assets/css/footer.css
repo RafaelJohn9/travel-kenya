@@ -4,7 +4,6 @@ footer {
     color: #fff;           /* White text color */
     padding: 20px;         /* Space inside the footer */
     text-align: center;    /* Center the text */
-    position: absolute;    /* Fixed position at the bottom */
     bottom: 0;
     width: 100%;
 }

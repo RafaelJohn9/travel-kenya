@@ -1,14 +1,15 @@
 /* Global font styling */
-body {
+.landing {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: url('/components/elephants.jpg'); /* Adjust path if necessary */
+    background-image: url('../images/elephants.jpg'); /* Adjust path if necessary */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     color: white;
+    height: 100vh;
+    width: 100%;
 }
 
 /* Header styles */

@@ -1,28 +1,29 @@
 
 .card {
-    width: 90%;
-    max-width: 300px;
-    margin: auto;
+    width: 70%;
+    /* max-width: 300px; */
+    margin-left: 100px;
+    margin-right: 50px;
+    /* opacity: 0.1; */
     background:  rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
-    padding: .4em;
-    border-radius: 6px;
+    /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9); */
+    padding: 0;
+    /* border-radius: 6px; */
   }
   
   .card-image {
-    background-color: rgb(236, 236, 236);
     width: 100%;
     height: 100;
-    border-radius: 6px 6px 6px 6px;
-    aspect-ratio: 16/9;
-    overflow: hidden;
+    align-items: right;
+    /* border-radius: 6px 6px 6px 6px; */
+    /* overflow: hidden; */
   }
   
 
   .card-image:hover, .card-image:focus {
     transform: scale(1.02);
-    transition-duration: 2000ms ;
+    transition-duration: 200ms ;
     transition-delay: 200ms;
      
 }
@@ -35,15 +36,26 @@
   
   
   .category {
-    text-transform: uppercase;
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     color: rgb(0, 0, 0);
-    padding: 10px 7px 0;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    display: flex;
+    justify-content: center;
   }
-  
-  
+
+  #county{
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .ratings{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
   .category:hover {
     cursor: pointer;
   }
@@ -62,7 +74,10 @@
     color: gray;
     font-weight: 400;
     font-size: 11px;
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
 
   
@@ -86,7 +101,7 @@
 
 @media (max-width: 480px) {
     .card {
-        width: 95%;
+        width: 85%;
         padding: 0.6em;
     }
 

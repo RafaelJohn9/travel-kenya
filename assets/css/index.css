@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#content{
+    margin: 0;
+    padding: 0;
+}
+
+#destinations-heading{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+#place-cards {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#places-to-visit{
+    margin: 0;
+    padding: 0;
+    /* height: vh; */
+    width: 100%;
+    background: linear-gradient(to bottom, #4f604e, #565f55, #4f604e);
+}
