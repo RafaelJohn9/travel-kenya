@@ -1,5 +1,6 @@
 import { experiences } from './experiences'
 import './App.css'
+import SliderExperiences from './SliderExper'
 
 function App() {
   
