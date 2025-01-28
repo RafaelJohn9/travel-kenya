@@ -14,30 +14,43 @@ function SliderExperiences({ e }) {
         setCurrent((prev) => (prev - 1 + e.length) % e.length); 
     };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setCurrent((prev) => (prev + 1) % e.length);
-        }, 3000);
+    
 
-        return () => clearTimeout(timer); 
-    }, [current, e.length]);
-
-    const themes = []; //for research
+    const themes = [
+        "rgba(0, 0, 255, .2)",
+        "rgba(0, 255, 255, .2)",
+        "rgba(110, 255, 0, .2)",
+        "rgba(230, 111, 127, .2)",
+        "rgba(255, 0, 110, .2)
+    ]; //for research
+    
+    const [currentTheme, setTheme] = useState(0);
 
     const expback = {
-        backgroundColor: {}, //change on each slide
+        backgroundColor: themes[currentTheme], //change on each slide
         backgroundPosition: "center",
-        objectFit: "cover"
+        objectFit: "cover",
+        height: "fit-content",
+        width: "100%",
     }
 
     const removeLocItem = (index, current) => {
         return e[current].locations.filter(item => item !== removeValue);
     }
+    
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCurrent((prev) => (prev + 1) % e.length);
+            setTheme((prev) => (prev + 1) % e.length);
+        }, 3000);
+
+        return () => clearTimeout(timer); 
+    }, [current, e.length]);
 
     return (
         <div className="slider">
             <div className='expeContainer'>
-                <div>
+                <div style={expback}>
                     <span className='experience-tag'>{e[current].experience}</span>
                     {e[current].location.map((item, index) => (
                         <span key={index} className="loc-item">
