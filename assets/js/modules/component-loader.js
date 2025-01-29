@@ -6,12 +6,9 @@ async function loadComponent(selector, componentPath) {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadComponent('#landing', 'components/landing_page.html');
-    loadComponent('#cards', 'components/card.html');
+    loadComponent('#cards1', 'components/card.html');
+    loadComponent('#cards2', 'components/card.html');
+    loadComponent('#cards3', 'components/card.html');
     // loadComponent('#reviews', 'components/review_card.html');
     loadComponent('#footer', 'components/footer.html');
 });
-
-// document.addEventListener('DOMContentLoaded', async () => {
-//     const payload = ['Nairobi', 'Mombasa', 'Kisumu']; // Example payload
-//     await renderCards(payload);
-// });
