@@ -1,0 +1,43 @@
+{
+    "gameparks": [
+      "Maasai Mara National Reserve",
+      "Amboseli National Park",
+      "Nairobi National Park",
+      "Tsavo National Park",
+      "Samburu National Reserve",
+      "Meru National Park",
+      "Aberdare National Park",
+      "Lake Nakuru National Park"
+    ],
+    "historical_sites": [
+      "Fort Jesus",
+      "Gedi Ruins",
+      "Karen Blixen Museum",
+      "Kenyatta International Conference Centre (KICC)",
+      "Kapenguria Museum",
+      "Thimlich Ohinga",
+      "Mnarani Ruins",
+      "Koobi Fora"
+    ],
+    "natural_wonders": [
+      "Mount Kenya",
+      "Lake Nakuru",
+      "Hell's Gate National Park",
+      "Lake Turkana",
+      "Menengai Crater",
+      "Chalbi Desert",
+      "Fourteen Falls",
+      "Crying Stone of Kakamega"
+    ],
+    "museums": [
+      "Nairobi National Museum",
+      "Bomas of Kenya",
+      "National Railway Museum",
+      "Lamu Museum",
+      "Hyrax Hill Prehistoric Site and Museum",
+      "Malindi Museum",
+      "Kisumu Museum",
+      "Bombolulu Workshops and Cultural Centre"
+    ]
+  }
+  
