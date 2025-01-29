@@ -52,9 +52,73 @@
     align-items: center;
 }
 
-#my_div {
-  outline: none;
-  height: 50px;
-  width: 60px;
-  transform: rotate(90deg);
+
+.carousel {
+    width: 80%;
+    color: white;
+    background-color: rgba(222, 222, 222, .6);
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    height: 300px;
+    min-height: 150px;
+    margin-bottom: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+.ex-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#n2, #n3, #n4, #n5 {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.carousel-nav {
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+} 
+.carousel-nav > button {
+    height: 2px;
+    width: 7px;
+    border: none;
+    background: rgba(255, 255, 255, 0.349);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: none;
+}
+.n1 {
+    background: white;
+}
+#Sitesc > p {
+    width: 60%;
+    right: 0;
+    height: 100%;
+}
+
+.view-locs {
+    background-color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 80px;
+    font-weight: 600;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    bottom: 15px;
+    font-size: 18px;
 }
