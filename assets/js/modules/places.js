@@ -1,3 +1,7 @@
+const fs = require('fs');
+const path = require('path');
+const places = require('./places.json');
+
 class GooglePlaces {
     constructor(apiKey) {
         this.apiKey = apiKey;
@@ -100,8 +104,42 @@ const googlePlaces = new GooglePlaces('AIzaSyCyeaFxaelGZ4sH4x9SUz0OcyYnS7lgxf0')
         }
         const images = await googlePlaces.getPlaceImages(placeId);
         console.log('Images for Lake Naivasha:', images);
+        const placesData = {
+            gameparks: [],
+            historical_sites: [],
+            natural_wonders: [],
+            museums: []
+        };
+
+        const categories = Object.keys(placesData);
+
+        (async () => {
+            try {
+                for (const category of categories) {
+                    for (const placeName of places[category]) {
+                        const placeId = await googlePlaces.getPlaceId(placeName);
+                        if (placeId) {
+                            const details = await googlePlaces.fetchPlaceDetails(placeId);
+                            const images = await googlePlaces.getPlaceImages(placeId);
+                            placesData[category].push({
+                                name: placeName,
+                                details,
+                                images
+                            });
+                        }
+                    }
+                }
+
+                fs.writeFileSync(path.join(__dirname, 'places_data.json'), JSON.stringify(placesData, null, 2));
+                console.log('Data saved to places_data.json');
+            } catch (error) {
+                console.error('Error processing places:', error);
+            }
+        })();
 
     } catch (error) {
         console.error(error);
     }
 })();
+
+
