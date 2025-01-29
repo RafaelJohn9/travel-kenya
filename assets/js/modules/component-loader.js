@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadComponent('#cards1', 'components/card.html');
     loadComponent('#cards2', 'components/card.html');
     loadComponent('#cards3', 'components/card.html');
-    // loadComponent('#reviews', 'components/review_card.html');
+    loadComponent('#reviews', 'components/review_table.html');
     loadComponent('#footer', 'components/footer.html');
 });

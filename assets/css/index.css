@@ -33,3 +33,7 @@ body{
     width: 100%;
     background: linear-gradient(to bottom, #4f604e, #565f55, #4f604e);
 }
+
+#reviews{
+    width: 100%;
+}
