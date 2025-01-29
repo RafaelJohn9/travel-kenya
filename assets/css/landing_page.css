@@ -1,0 +1,168 @@
+/* Global font styling */
+.landing {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/elephants.jpg'); /* Adjust path if necessary */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(5, 29, 3, 0.7); /* Dark transparent background */
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 25px;
+    font-family:playfair Display ;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main h1 {
+    font-size: 100px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.2;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom:px;
+    margin-top: 2px;
+    padding: 20px;
+    line-height: -10;
+
+}
+
+
+button {
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent background */
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    margin-left: 20px;  /* Aligns the button to the left */
+    
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);  
+    color: black;
+}
+@media screen and (min-width: 1024px) {
+    main h1 {
+        font-size: 64px;
+    }
+    button {
+        font-size: 18px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    main {
+        flex-direction: column; /* Stack content vertically */
+        align-items: start;    /* Center-align content */
+        text-align: start;
+    
+    }
+
+    main h1 {
+        font-size: 48px;
+        max-width: 80%; /* Allow more space for text */
+    }
+
+    button {
+        margin: 20px auto;
+        margin-left: 20px;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 32px;
+        max-width: 90%;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 15px auto;
+    }
+    
+    nav h1 {
+        font-size: 15px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+main {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align everything to the left */
+    padding: 10px;
+    line-height: 1.2 ;
+    font-family: play fair display;
+}

@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   min-height: 100vh;
   display: flex;
@@ -31,14 +32,17 @@ body {
   border-radius: 50%;
   z-index: 1;
   font-size: 26px;
+
   
   color: white;
   background: #00000072;
   cursor: pointer;
 }
 
+
 #cCarousel #prev {
   left: 0px;
+
 }
 
 #cCarousel #next {
@@ -55,9 +59,11 @@ body {
   margin: auto;
 }
 
+
 @media (max-width: 770px) {
   #carousel-vp {
     width: 510px;
+
   }
 }
 
@@ -92,6 +98,7 @@ body {
   min-height: 246px;
   color: white;
 }
+
 
 .cCarousel-item .infos {
   height: 100%;

@@ -1,0 +1,54 @@
+/* Footer Styles */
+footer {
+    background-color: #0c2b13; /* Dark background color */
+    color: #fff;           /* White text color */
+    padding: 20px;         /* Space inside the footer */
+    text-align: center;    /* Center the text */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;      /* Ensure the content wraps for smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    color:white;       /* Logo text color */
+}
+
+.contact span {
+    display: block;
+    margin: 5px 0;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+/* Link styles within the footer */
+
+.contact :hover {
+    color: #ffa500;     /* Orange links on hover */
+    cursor: pointer;
+    text-decoration: underline;
+} 
+
+/* Social Media Icons */
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
