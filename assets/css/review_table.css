@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #42926e;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Profile section */
+.table-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.profile-name {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Ratings stars */
+.stars {
+    display: flex;
+    gap: 3px;
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+}
+
+/* Review details */
+.place-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.date-time {
+    color:darkgray;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 14px;
+    color:black;
+}
