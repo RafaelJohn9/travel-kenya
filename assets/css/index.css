@@ -79,3 +79,14 @@ body{
     color: "white";
     padding-left: 10px;
 }
+
+#user-review{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #4f604e, #565f55, #4f604e);
+}
