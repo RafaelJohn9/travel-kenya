@@ -7,8 +7,9 @@ async function loadComponent(selector, componentPath) {
 document.addEventListener('DOMContentLoaded', () => {
     loadComponent('#landing', 'components/landing_page.html');
     loadComponent('#cards1', 'components/card.html');
-    loadComponent('#cards2', 'components/card.html');
-    loadComponent('#cards3', 'components/card.html');
+    // loadComponent('#cards2', 'components/card.html');
+    // loadComponent('#cards3', 'components/card.html');
+    loadComponent('#experience-cards', 'components/experience.html');
     loadComponent('#reviews', 'components/review_table.html');
     loadComponent('#footer', 'components/footer.html');
 });

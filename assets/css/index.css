@@ -37,3 +37,42 @@ body{
 #reviews{
     width: 100%;
 }
+
+#reviews-table{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #4f604e, #565f55, #4f604e);
+}
+
+#reviews-heading{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+#experiences{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#our-gameparks{
+    align-items: center;
+}
+
+#video-h2{
+    color: "white";
+    padding-left: 10px;
+}
+
+#video-h3{
+    color: "white";
+    padding-left: 10px;
+}
